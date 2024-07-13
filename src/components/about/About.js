@@ -25,9 +25,9 @@ export default function About({innerRef}) {
             </p>
             <p><span style={{color: info.baseColor}}>skills/tools <span
                 className={Style.green}>(main)</span> $</span> ls</p>
-            <p style={{color: info.baseColor}}> Proficient With</p>
+            <p style={{color: info.baseColor}}> Stack</p>
             <ul className={Style.skills}>
-                {info.skills.proficientWith.map((proficiency, index) => <li key={index}>{proficiency}</li>)}
+                {info.skills.stack.map((proficiency, index) => <li key={index}>{proficiency}</li>)}
             </ul>
             <p style={{color: info.baseColor}}> Exposed To</p>
             <ul className={Style.skills}>
@@ -39,8 +39,8 @@ export default function About({innerRef}) {
     function miscText() {
         return <>
             <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cd
-                hobbies/interests</p>
-            <p><span style={{color: info.baseColor}}>hobbies/interests <span
+                work</p>
+            <p><span style={{color: info.baseColor}}>work/experience <span
                 className={Style.green}>(main)</span> $</span> ls</p>
             <ul>
                 {info.hobbies.map((hobby, index) => (
